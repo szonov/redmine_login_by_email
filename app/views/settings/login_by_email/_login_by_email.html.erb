@@ -1,0 +1,5 @@
+<p>
+  <label for="settings_use_login_by_email"><%= l(:label_login_by_email_use) %></label>
+  <%= hidden_field_tag 'settings[use_login_by_email]', 0, :id => nil %>
+  <%= check_box_tag 'settings[use_login_by_email]', 1, @settings["use_login_by_email"].to_i > 0 %>
+</p>
